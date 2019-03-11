@@ -1,0 +1,5 @@
+STM32 ST-LINK Utility install & run
+Connect & Program(generic_boot20_pc13.bin) & verify by STM32 ST Link
+Address : 0x08000000
+Size : 0x5294
+Data Width : 32 bits
