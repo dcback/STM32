@@ -1,3 +1,7 @@
+/*********************************************************
+    mySerial.write(buf, sizeof(buf))     write -> serial
+    mySerial.readBytes(buf, sizeof(buf)) serial -> read
+**********************************************************/
 #include "SoftSerialSTM32.h"
 
 #define GPIO_SERIAL_RX    PA2
@@ -6,10 +10,6 @@ SoftSerialSTM32 mySerial(GPIO_SERIAL_RX, GPIO_SERIAL_TX);
 
 char buf[6];
 
-/*********************************************************
-    mySerial.write(buf, sizeof(buf))     write -> serial
-    mySerial.readBytes(buf, sizeof(buf)) serial -> read
-**********************************************************/
 void setup() {
     Serial.begin(9600);
     mySerial.begin(9600);
