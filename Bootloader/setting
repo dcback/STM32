@@ -1,6 +1,7 @@
 1. STM32 ST-LINK Utility install & run
-2. Connect & Program(generic_boot20_pc13.bin) & verify by STM32 ST Link
+2. Connect & Program(generic_boot20_pc13.bin) & verify by STM32 ST Link 
+  리셋 버튼을 누르고 프로그램 실행 해야함.. 
   * Address : 0x08000000
   * Size : 0x5294
   * Data Width : 32 bits
-3. It' can be Program upload & monitoring by USB Serial(Maple) 
+3. It can be Program upload & monitoring by USB Serial(Maple)
