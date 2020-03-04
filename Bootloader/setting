@@ -5,3 +5,11 @@
   * Size : 0x5294
   * Data Width : 32 bits
 3. It can be Program upload & monitoring by USB Serial(Maple)
+
+[STM32 부터로더 요약]
+1. STM32 ST-LINK Utility 설치/실행
+2. 리셋버튼을 누른 상황에서 보드에 연결(Connect) & 리셋 해제
+3. generic_boot20_pc13 파일을 Open
+3. Target -> Program & Verify로 부트로더를 올린다.
+  [정상 결과] 
+  Address:0x08000000, Size:0x5294, Data Width:32bits
