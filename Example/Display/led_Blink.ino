@@ -3,17 +3,19 @@
 ************************************/
 #define ledPin  PC13
 
-void setup() {
-    Serial.begin(9600);
-    pinMode(ledPin, OUTPUT);
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
 }
 
-void loop() {
-    digitalWrite(ledPin, HIGH);
-    delay(1000);
+void loop()
+{
+  digitalWrite(ledPin, HIGH);
+  delay(500);
+  digitalWrite(ledPin, LOW);
+  delay(500);
 
-    digitalWrite(ledPin, LOW);
-    delay(1000);
-
-    Serial.println(millis());
+  Serial.print(millis() / 1000);
+  Serial.println("초");
 }
